@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+      
+      /* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border: 3px solid white;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Balance Section */
+.balance {
+  align-content: center;
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0px 7575px 6px rgba(0, 0, 0, 0.2);
+}
+
+.balance-info {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px; /* Adjust spacing between text and amount */
+}
+
+.balance-info span:first-child {
+    flex-grow: 1; /* Push amount and button to the right */
+}
+
+.balance-info .amount {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.withdraw {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+    </style>
+    
+    
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="Arena.html">ARENA</a>
+        <a href="Bet.html">BET</a>
+        <a href="Profile.html">PROFILE</a>
+        <a href="Help.html">HELP</a>
+    </div><br><br>
+
+
+
+        <!-- Balance Section -->
+        <div class="balance">
+            <div class="balance-info">
+                <span>Available Balance :-</span>
+                <span class="amount">₹0</span>
+            </div>
+            <a href="#" class="withdraw">Withdraw &gt;</a>
+        </div>
+    </div>
+</body>
+</html>

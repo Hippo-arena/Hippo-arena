@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    
+    <style>
+      /* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar container */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border: 3px solid white;
+    padding: 10px 0;
+}
+
+/* Navigation bar items */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Container for image boxes */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+      gap: 20px;
+}
+
+/* Image box styles */
+.image-box {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+/* Image styles */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border-radius: 10px; /* Matches the box's rounded corners */
+}
+    </style>
+    
+    
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="Arena.html" class="nav-item">ARENA</a>
+        <a href="Bet.html" class="nav-item">BET</a>
+        <a href="Profile.html" class="nav-item">PROFILE</a>
+        <a href="Help.html" class="nav-item">HELP</a>
+    </div>
+    
+      <div class="container">
+    <div class="image-box">
+      
+      <a href="FF.html">
+      <img src="FF.jpg" alt="Image 1">
+      </a>
+    </div>
+    <div class="image-box">
+      <img src="Coming.jpg" alt="Image 2">
+    </div>
+</body>
+</html>

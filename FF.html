@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="FF.css">
+    <style>
+    @font-face {
+  font-family:Devkanevis;
+  src: url(/home/nevis.ttf);
+}
+
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar container */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border: 3px solid white;
+    padding: 10px 0;
+}
+
+/* Navigation bar items */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Section container */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Headings */
+.section h1 {
+  font-family: Devkanevis,sans-serif;
+  font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding-bottom: 10px; /* Gap of 10px between heading and image box */
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Image box styles */
+.image-box {
+    width: 80%;
+    max-width: 800px;
+    height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    position: relative;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline for the link */
+}</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="Arena.html" class="nav-item">ARENA</a>
+        <a href="Bet.html" class="nav-item">BET</a>
+        <a href="Profile.html" class="nav-item">PROFILE</a>
+        <a href="Help.html" class="nav-item">HELP</a>
+    </div>
+    
+    <!-- Section 1 -->
+    <div class="section">
+        <b><h1>Classic Mode</h1></b>
+        <div class="image-box">
+            <a href="Mode.html">
+                <img src="Classic.jpg" alt="Classic Matches">
+            </a>
+        </div>
+    </div></br></br>
+    <p align="center"> -----------------------------------------------------------------</p>
+    
+    <!-- Section 2 -->
+    <div class="section">
+        <h1>CS Mode</h1>
+        <div class="image-box">
+            <a href="Mode.html">
+                <img src="Cs.jpg" alt="Coming Soon">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

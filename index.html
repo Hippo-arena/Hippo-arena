@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hippo Arena</title>
+  <style>
+
+@font-face {
+  font-family:Alegreyafont;
+  src: url(AlegreyaSansSC-Regular.ttf);
+}
+@font-face {
+  font-family:Devkanevis;
+  src: url(nevis.ttf);
+}
+
+
+
+/* General Styles */
+body {
+  margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif !important;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+  background-color:black;
+  padding: 10px 0;
+  font-size: 16px;
+  border: 3px solid white;
+}
+
+.nav-item {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-decoration: 18px;
+
+}
+
+nav a:hover {
+  color: #ff4d4d;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.welcome {
+  font-family: Devkanevis,sans-serif;
+  margin-top: 10px;
+    font-size: 3.2rem;
+     color: #FFFFFF ;
+    line-height: 1.5;
+}
+
+.to {
+  font-family:Devkanevis,sans-serif;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 15rem;
+    right: 0;
+    font-size: 1.6rem;
+    color:white;
+    font-weight: bold;
+}
+
+
+/* Logo Section */
+.logo {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.logo img {
+  
+  width: 220px;
+  align-self: center;
+  margin-top: -25px
+}
+
+
+.textlogo {
+  margin-top: 0px;
+}
+.textlogo img {
+  width:150px;
+}
+
+/* Subtitle */
+.sub-title {
+
+font-family: Alegreyafont,sans-serif;
+
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/* Divider Line 
+hr {
+  margin-top: 500px;
+  width: 80%;
+  border: 1px solid white;
+  margin: 20px auto;
+}
+*/
+
+
+#loading {
+  background:black url(Animation.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  
+}
+/* Footer Styles */
+footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center; /* Center align all content in footer */
+  border: 2px solid white;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack the sections vertically */
+  justify-content: center; /* Align content to the center */
+  align-items: center;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align individual sections */
+  margin-bottom: 20px; /* Add margin to separate sections */
+}
+
+.footer-section h3 {
+  font-family: Devkanevis,sans-serif;
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: red;
+}
+
+.footer-section p {
+  font-family: Alegreyafont, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 0px;
+}
+
+
+
+</style>
+</head>
+<body>
+  
+  <div id="loading"></div>      
+  
+  <nav>
+    <a href="index.html" class="nav-item">HOME</a>
+    <a href="Arena.html" class="nav-item">ARENA</a>
+    <a href="Bet.html" class="nav-item">BET</a>
+    <a href="Profile.html" class="nav-item">PROFILE</a>
+    <a href="Help.html" class="nav-item">HELP</a>
+  </nav>
+  
+  <div class="main-content">
+    <div class="container">
+      <span class="welcome">WELCOME</span>
+      <span class="to">TO</span>
+    </div>
+
+    <br><br><br>
+    <div class="logo">
+      <img src="hippo.png" alt="Hippo Arena Logo">
+    </div>
+
+    <div class="textlogo">
+      <img src="textlogo.png" alt="Hippo Arena text">
+    </div>
+
+    <br><br>
+    <p class="sub-title">
+      Prove Your Gameplay Here!<br>
+      Win Exciting Prizes by Winning Tournaments<br>
+      Invite Your Friends Now and Participate in the Upcoming Tournaments
+    </p>
+    <p>-------------------------------------------------------------------</p>
+  </div>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-content">
+    <!-- About Us Section -->
+    <div class="footer-section footer-about">
+      <h3>About Us</h3>
+      <p>Hippo Arena Is Your Go-To Destination For Exciting Tournaments, Thrilling Gameplay, And Exclusive Prizes. Join Us To Compete, Connect, And Conquer!</p>
+    </div>
+    <!-- Address Section -->
+    <div class="footer-section footer-address">
+      <h3>Address</h3>
+      <p>Sector F/4 Beri Delhi-110074</p>
+    </div>
+
+
+</footer>
+
+  <script src="Home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Design</title>
+    <style>
+      
+      
+@font-face {
+    font-family: Alegreyafont;
+    src: url(/home/AlegreyaSansSC-Regular.ttf);
+}
+@font-face {
+  font-family: Devkanevis;
+  src: url(/home/nevis.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    justify-content: space-between;
+    text-align: left;
+    height: auto;
+    width: 350px;
+}
+
+.box {
+  align-items: center;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px; /* Make it responsive */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.time {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+
+.entry-fee-button {
+    font-family: Devkanevis, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer; /* Makes it look like a button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.entry-fee-button:hover {
+    background-color: #444; /* Change color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.entry-fee-button:active {
+    background-color: #666; /* Active color */
+    transform: scale(0.95); /* Slight shrink effect */
+}
+
+.details p {
+    font-family: Devkanevis, sans-serif;
+    margin: 2px 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.rules {
+  font-family:Devkanevis,sans-serif;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.rules h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+} 
+.rules h5 {
+  font-family: Alegreyafont,sans-serif;
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p class="time">TIME: 00:00</p>
+            <div class="entry-fee-button">
+    ENTRY FEE ₹10
+</div>
+        </div>
+        <div class="details">
+           <p>TOTAL TOURNAMENTS: 0</p>
+            <p>TOTAL ROUNDS: 15</p>
+            <p>TOTAL PLAYER: 0</p>
+            <p>DATE: 00-00-00</p>
+            <p>TYPE: SQUAD</p>
+            <p>RANK: GOLD</p>
+        </div>
+        <div class="rules">
+         <h1 align="center">---------RULES----------</h1>
+      
+        <h5 align="left">1] Teaming With Enemy Team Is Forbidden </h5>
+        
+         <h5 align="left">2] Using Any Type Of Config File/Paid Panels Or Hacks Is Not Allowed If Anyone Got Detected By Our Anti-Bot They Will Be Disqualified</h5>
+         
+          <h5 align="left">3] From The Given Time,The Room Will Wait For 10 Mins For Players To Join The Room And If Anyone Got Failed To Join They Will Be Transferred To The Next Tournament With No Entry Fee</h5>
+        
+      
+         <h5 align="left">4] The Entry With No Fee Will Only Last Long For The Next 3 Tournaments That Means If You Failed To Join The Upcoming 3 Tournament The Coupon Of Free Entry Will Be Expired</h5>
+        
+           <h5 align="left">5] If You Have Completed The Payment And You Didn't Receive Any Email Or Confirmation Message Then You Need To Wait Atleast 5 Mins After You Made The Payment</h5>
+          
+
+               
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

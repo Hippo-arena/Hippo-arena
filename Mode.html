@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    
+    <style>
+     
+      /* Font Face */
+@font-face {
+    font-family: Devkanevis;
+    src: url(/home/nevis.ttf);
+}
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar container */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border: 3px solid white;
+    padding: 10px 0;
+}
+
+/* Navigation bar items */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Section container */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Reduced margin for compact layout */
+}
+
+/* Headings */
+.section h1 {
+    font-family: Devkanevis, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px; /* Reduced font size for smaller boxes */
+    text-align: center;
+}
+
+/* Smaller Image box styles with 9:16 ratio */
+.image-box {
+    width: 60%; /* Further reduced width for smaller boxes */
+    max-width: 200px; /* Further reduced maximum width */
+    aspect-ratio: 9 / 16; /* Maintains 9:16 portrait ratio */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    position: relative;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+}
+
+.image-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline for the link */
+}
+
+/* Horizontal line */
+p {
+    text-align: center;
+    color: white;
+    margin: 10px 0; /* Further reduced margin for compact layout */
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="Arena.html" class="nav-item">ARENA</a>
+        <a href="Bet.html" class="nav-item">BET</a>
+        <a href="Profile.html" class="nav-item">PROFILE</a>
+        <a href="Help.html" class="nav-item">HELP</a>
+    </div>
+    
+    <!-- Section 1 -->
+    <div class="section">
+        <b><h1>Solo</h1></b>
+        <div class="image-box">
+            <a href="S-entry.html">
+                <img src="Solo.jpg" alt="Classic Matches">
+            </a>
+        </div>
+    </div></br></br>
+    <p align="center"> -----------------------------------------------------------------</p>
+    
+    <!-- Section 2 -->
+    <div class="section">
+        <h1>Duo</h1>
+        <div class="image-box">
+            <a href="D-entry.html">
+                <img src="Duo.jpg" alt="Coming Soon">
+            </a>
+        </div>
+    </div></br></br>
+        <p align="center"> -----------------------------------------------------------------</p>
+    
+    
+        <div class="section">
+        <h1>Squad</h1>
+        <div class="image-box">
+            <a href="SQ-entry.html">
+                <img src="Squad.jpg" alt="Coming Soon">
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
